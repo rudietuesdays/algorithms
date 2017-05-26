@@ -95,4 +95,13 @@ function rFibonacci(n){
 }
 console.log(rFibonacci(6));
 
-// recursive binary search tree
+// recursive binary search tree - return index of given value or false if not in the tree
+function rBS(array, num){
+  
+}
+
+var arr = [-90,-19,0,2,12,29,33,190,320];
+rBS(arr, 5)             // => false
+rBS(arr, 12)            // => 4
+rBS(arr, 0)             // => 2
+rBS(arr, 190)           // => 7
