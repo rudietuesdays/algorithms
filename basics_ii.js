@@ -97,7 +97,19 @@ console.log(rFibonacci(6));
 
 // recursive binary search tree - return index of given value or false if not in the tree
 function rBS(array, num){
-  
+  if (num == array[(array.length/2)]) {
+    return (array.length/2);
+  } else if (num > array[(array.length / 2)]){
+    return rBSHelper(array, num, (array.length / 2), (array.length-1))
+  } else if (num < array[(array.length / 2)]) {
+    return rBSHelper(array, num, 0, (array.length / 2))
+  } else {
+    return false;
+  }
+}
+
+function rBSHelper(arr, num, min, max){
+  if 
 }
 
 var arr = [-90,-19,0,2,12,29,33,190,320];
